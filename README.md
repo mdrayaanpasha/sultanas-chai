@@ -6,6 +6,9 @@
 
 ## Get it running
 
+Pre-Requisite Include: (having nodejs 16+ version downloaded)
+
+
 ```bash
 git clone https://github.com/mdrayaanpasha/sultanas-chai.git
 cd sultanas-chai
