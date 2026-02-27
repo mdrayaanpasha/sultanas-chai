@@ -7,8 +7,8 @@
 ## Get it running
 
 ```bash
-git clone https://github.com/yourusername/sultanas-heritage-kitchen.git
-cd sultanas-heritage-kitchen
+git clone https://github.com/mdrayaanpasha/sultanas-chai.git
+cd sultanas-chai
 npm install
 npm run dev
 ```
