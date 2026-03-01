@@ -15,11 +15,11 @@ function useInView(threshold = 0.1) {
 }
 
 const NAV_LINKS = [
-  { label: "Our Menu",     href: "#" },
-  { label: "The Story",    href: "#" },
-  { label: "The Vibe",     href: "#" },
-  { label: "Find Us",      href: "#" },
-  { label: "Reserve",      href: "#" },
+  { label: "Our Menu",     href: "/menu" },
+
+  { label: "The Vibe",     href: "/about" },
+  { label: "Find Us",      href: "/contact" },
+
 ];
 
 const SOCIAL_LINKS = [
@@ -330,31 +330,7 @@ export default function SultanasFooter() {
             </div>
           </div>
 
-          {/* Newsletter column */}
-          <div className="md:col-span-3 md:col-start-10" style={reveal(0.42)}>
-            <p className="text-[#E67E22] text-[9px] tracking-[0.35em] uppercase font-sans mb-2">
-              Stay in the loop
-            </p>
-            <p className="text-[rgba(245,236,215,0.35)] font-sans text-[12px] leading-relaxed tracking-[0.04em] mb-5">
-              Specials, new items, and the occasional reminder that the samosas are ready.
-            </p>
-            <NewsletterInput />
-
-            {/* Social icons */}
-            <div className="flex items-center gap-5 mt-8">
-              {SOCIAL_LINKS.map(s => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  title={s.label}
-                  className="text-[rgba(245,236,215,0.3)] transition-all duration-300 hover:text-[#E67E22]
-                             hover:-translate-y-0.5"
-                >
-                  {s.icon}
-                </a>
-              ))}
-            </div>
-          </div>
+      
         </div>
 
         {/* ── BOTTOM STRIP ── */}
