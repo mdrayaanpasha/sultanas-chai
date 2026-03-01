@@ -14,24 +14,24 @@ const Navbar = ({ isLoaded }) => {
           transition: "opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1)",
         }}
       >
-        {/* Logo */}
-        <div className="flex items-center gap-4" onClick={e=>window.location.href="/"}>
-          <div className="w-11 h-11 rounded-full border border-[rgba(230,126,34,0.5)] flex items-center justify-center">
-            <div className="w-7 h-7 rounded-full border border-[rgba(230,126,34,0.3)] flex items-center justify-center">
-              <div className="w-[6px] h-[6px] rounded-full bg-[#E67E22]" />
-            </div>
-          </div>
-          <div>
-            <p className="text-[#F5ECD7] text-[13px] tracking-[0.25em] uppercase font-serif font-normal">
-              Sultana's
-            </p>
-            <p className="text-[rgba(245,236,215,0.4)] text-[9px] tracking-[0.2em] uppercase font-sans font-light">
-              Est. 1974 · Shivajinagar
-            </p>
-          </div>
+       <div className="flex items-center gap-4 cursor-pointer" onClick={() => window.location.href="/"}>
+        {/* Circular Image Logo */}
+        <img 
+          src="https://ik.imagekit.io/yylpuqff5/ASSIGNMENTs/logo.png" 
+          alt="Sultana's Logo"
+          className="w-11 h-11 rounded-full object-cover border border-[rgba(230,126,34,0.5)]"
+        />
+        
+        <div>
+          <p className="text-[#F5ECD7] text-[13px] tracking-[0.25em] uppercase font-serif font-normal">
+            Sultana's
+          </p>
+          <p className="text-[rgba(245,236,215,0.4)] text-[9px] tracking-[0.2em] uppercase font-sans font-light">
+            Est. 1974 · Shivajinagar
+          </p>
         </div>
-
-        {/* Links */}
+      </div>
+              {/* Links */}
         <div className="hidden md:flex items-center gap-10">
           {[["Our Menu","/menu"], ["The Vibe","/about"], ["Find Us","/contact"]].map((item) => (
             <a
